@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'win'
+    }
     stages {
         stage('packaging') {
             steps {
